@@ -1,3 +1,4 @@
+
 [project]
 name = "lab-1-uv"
 version = "0.1.0"
@@ -7,10 +8,13 @@ authors = [
     { name = "m-djabali-ece", email = "messade.djabali@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-lab-1-uv = "lab_1_uv:main"
+dataset-users="lab_1_uv.dataset_users:main"
+dataset-orders="lab_1_uv.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
